@@ -1,0 +1,42 @@
+@model Student
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application Form</title>
+</head>
+<body>
+
+    <ul>
+        
+    </ul>
+
+    <form asp-action="apply" method="POST">
+        <p>
+            <label asp-for="name">Name</label>
+            <input asp-for="name">
+        </p>
+        <p>
+            <label asp-for="phone">Phone Number</label>
+            <input asp-for="phone">
+        </p>
+        <p>
+            <label asp-for="email">Email</label>
+            <input asp-for="email">
+        </p>
+        <p>
+            <label asp-for="confirm">I will try come</label>
+            <select asp-for="confirm">
+                <option value="true">Yes</option>
+                <option value="false">No </option>
+
+            </select>
+        </p>
+        <input type="submit" value="Submit">    
+    </form>
+    
+</body>
+</html>
