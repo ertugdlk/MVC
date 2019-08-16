@@ -1,5 +1,6 @@
 using Project.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace Project.Controllers
 {
@@ -33,7 +34,7 @@ namespace Project.Controllers
         {
             var course = new Course();
             course.Name = "net core";
-            course.description = "güzel bir kurs";
+            course.description = "good course";
             course.isPublished = true;
 
             return View(course);
@@ -42,7 +43,8 @@ namespace Project.Controllers
         // localhost:5000/course/list => course/list.cshtml
         public IActionResult List()
         {
-            return View();
+            var students = Repository.Students.Where(i=>i.confirm==true);
+            return View(students);
         }
     }
 }

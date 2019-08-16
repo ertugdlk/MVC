@@ -10,30 +10,37 @@ namespace Project.Models
 
 {
     public static class Repository
+
     {
         private static List<Student> _students = new List<Student>();
-        
 
-        public static List<Student> Students()
+        // Repository.Students
+
+        public static List<Student> Students
         {
-
-            return _students;
-        }
-
-        public static void AddStudent(Student st)
-        {
-            using (StreamWriter sw = new StreamWriter(("names.txt")))
+            get
             {
-            _students.Add(st);
-            sw.WriteLine(JsonConvert.SerializeObject(st));
-            sw.Flush();
-
+                return _students;
             }
-           
-            
         }
 
-        
+        //Repository.AddStudent(student);
+        public static void AddStudent(Student student)
+        {
+            _students.Add(student);
+        }
 
     }
 }
+
+
+
+
+/*       private static List<Student> _students = new List<Student>();
+
+
+  //     public static List<Student> Students()
+       {
+
+           return _students;
+       }*/
