@@ -24,9 +24,14 @@ namespace Project.Controllers
         [HttpPost]
         public IActionResult Apply(Student student)
         {
-          Repository.AddStudent(student);
-          //TODO: Implement Realistic Implementation
-          return View("thanks" , student);
+            if (ModelState.IsValid)
+            {
+                Repository.AddStudent(student);
+                //TODO: Implement Realistic Implementation
+                return View("thanks", student);
+            }
+            else
+                return View(student);
         }
 
 

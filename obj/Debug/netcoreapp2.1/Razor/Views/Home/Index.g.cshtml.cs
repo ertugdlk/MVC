@@ -53,7 +53,7 @@ using Project.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 203, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d0d55ece6564df299ed1ca58e3d523f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0f1d699216c45bab2e138df944764dc", async() => {
                 BeginContext(31, 190, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <title>Home</title>\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">  \r\n");
                 EndContext();
@@ -73,7 +73,7 @@ using Project.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(230, 413, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0bf6796cf75c4925a5bb34ca2a9c31b3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c07831e49b7469d9848c6139f9d8ed5", async() => {
                 BeginContext(236, 30, true);
                 WriteLiteral("   \r\n        <p>\r\n            ");
                 EndContext();
@@ -98,7 +98,7 @@ using Project.Models;
                 WriteLiteral(", How are u ?\r\n        </p>\r\n        <p>\r\n            I hope you are satisfied with our courses\r\n\r\n            for some details ");
                 EndContext();
                 BeginContext(442, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e93f9b20c7e48af9e127e2f134c6d3f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "82b41db9181a4e6c877483bbcab0d58e", async() => {
                     BeginContext(490, 9, true);
                     WriteLiteral(".NET Core");
                     EndContext();
@@ -122,7 +122,7 @@ using Project.Models;
                 WriteLiteral("\r\n        </p> \r\n        <p>\r\n            ");
                 EndContext();
                 BeginContext(545, 75, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2065251d195f4649b74d1c19ecb02a12", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "402a58a5f0ac4add906d2369e30cd2b0", async() => {
                     BeginContext(591, 25, true);
                     WriteLiteral("Apply to .NET Core course");
                     EndContext();
