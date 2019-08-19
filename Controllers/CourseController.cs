@@ -18,7 +18,7 @@ namespace Project.Controllers
         [HttpGet]
         public IActionResult Apply()
         {
-          //TODO: Implement Realistic Implementation
+            //TODO: Implement Realistic Implementation
           return View();
         }
         [HttpPost]

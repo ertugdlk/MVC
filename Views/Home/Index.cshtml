@@ -5,19 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="/modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body>   
-        <p>
-            @ViewBag.Greeting
-            @ViewBag.UserName, How are u ?
-        </p>
-        <p>
-            I hope you are satisfied with our courses
 
-            for some details <a asp-action="details" asp-controller="course">.NET Core</a>
-        </p> 
-        <p>
-            <a asp-action="apply" asp-controller="course">Apply to .NET Core course</a>
-        </p>
+        <div class="container m-4" >
+            <div class="card mx-auto" style="width:800px;">
+                
+                <div class="card-header">
+                     @ViewBag.Greeting
+                     @ViewBag.UserName, How are u ?
+
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        I hope you are satisfied with our courses
+                        for some details <a asp-action="details" asp-controller="course">.NET Core</a></p>
+                    <a asp-action="apply" asp-controller="course" class="btn btn-primary btn-block">Apply to .NET Core course</a>
+                </div>
+
+            </div>
+
+        </div>
 </body>
 </html>

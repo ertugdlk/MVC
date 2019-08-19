@@ -6,34 +6,43 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Course</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="/modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css"> 
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <td>Name</td>
-                <td>Email</td>
-                <td>Phone</td>
-                <td>Confirm</td>
-            </tr>
+            
+        <div class="container m-4" >
+            <div class="card mx-auto" style="width:800px;">
+                
+                <div class="card-header">
+                     Kursa katılanlar
 
-        </thead>
-        <tbody>
+                </div>
+                <table class = "table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Phone</td>
+                            <td>Confirm</td>
+                        </tr>
 
-            @foreach (var Student in Model)
-            {
-            <tr>
-                <td>@Student.name</td>
-                <td>@Student.email</td>
-                <td>@Student.phone</td>
-                <td>@Student.confirm</td>
-            </tr>
+                    </thead>
+                    <tbody>
 
+                        @foreach (var Student in Model)
+                        {
+                        <tr>
+                            <td>@Student.name</td>
+                            <td>@Student.email</td>
+                            <td>@Student.phone</td>
+                            <td>@Student.confirm</td>
+                        </tr>
+                        }
 
-
-
-            }
+                </div>
+                </div>
 
         </tbody>
     </table>

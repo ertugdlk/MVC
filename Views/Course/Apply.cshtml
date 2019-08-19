@@ -7,37 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Application Form</title>
+    <link rel="stylesheet" href="/modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body>
 
-    <ul>
-        
-    </ul>
+    <div class="container m-4" >
+            <div class="card mx-auto" style="width:500px;">
+                
+                <div class="card-header">
+                     Application Form
 
-    <form asp-action="apply" method="POST">
-        <div asp-validation-summary="All"></div>
-        <p>
-            <label asp-for="name">Name</label>
-            <input asp-for="name">
-        </p>
-        <p>
-            <label asp-for="phone">Phone Number</label>
-            <input asp-for="phone">
-        </p>
-        <p>
-            <label asp-for="email">Email</label>
-            <input asp-for="email">
-        </p>
-        <p>
-            <label asp-for="confirm">I will try come</label>
-            <select asp-for="confirm">
-                <option value="true">Yes</option>
-                <option value="false">No </option>
+                </div>
+                <div class="card-body">
+                    <form asp-action="apply" method="POST">
+                        <div asp-validation-summary="All"></div>
+                        <div class ="form-group">
+                            <label asp-for="name">Name</label>
+                            <input asp-for="name" class = "form-control">
+                        </div>
+                        <div class ="form-group">
+                            <label asp-for="phone">Phone Number</label>
+                            <input asp-for="phone" class = "form-control">
+                        </div>
+                        <div class ="form-group">
+                            <label asp-for="email">Email</label>
+                            <input asp-for="email" class = "form-control">
+                        </div>
+                        <div class ="form-group">
+                            <label asp-for="confirm">Will you join ? </label>
+                            <select asp-for="confirm" class = "form-control">
+                                <option value="true">Yes</option>
+                                <option value="false">No </option>
 
-            </select>
-        </p>
-        <input type="submit" value="Submit">    
+                            </select>
+                        </div>
+                        <input type="submit" value="Submit" class = "btn btn-primary btn-block">    
     </form>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    
     
 </body>
 </html>
